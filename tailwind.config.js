@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        color: {
+          btn: '#ACACAC',
+          btnHover: '#8D8A8A',
+          sidebarContainer: '#D9D9D9',
+          sidebarBackground: '#DAD8B8',
+          heroBackground: '#FFFDD0'
+        }
+      }
+    },
   },
   plugins: [],
 }

@@ -1,7 +1,11 @@
+import Sidebar from "./Sidebar";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <div className="hidden sm:flex w-1/4 bg-color-sidebarBackground">
+        <Sidebar/>
+      </div>
+    </div>
   )
 }
