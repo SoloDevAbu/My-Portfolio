@@ -10,12 +10,12 @@ import Sidebar from "./Sidebar";
 export default function App() {
   return (
     <div className="flex">
-      <div className="hidden sm:flex w-1/4 h-screen bg-color-sidebarBackground justify-center">
-        <Sidebar />
-      </div>
-      <div className="w-full h-full sm:w-3/4">
-        <BrowserRouter>
-          <Suspense>
+      <BrowserRouter>
+        <div className="hidden sm:flex w-1/4 h-screen bg-color-sidebarBackground justify-center">
+          <Sidebar/>
+        </div>
+        <div className="w-full h-full sm:w-3/4">
+          <Suspense fallback={'Loading...'}>
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />
@@ -23,8 +23,8 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     </div>
   )
 }
