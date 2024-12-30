@@ -12,7 +12,7 @@ export default {
           btnHover: '#8D8A8A',
           sidebarContainer: '#D9D9D9',
           sidebarBackground: '#DAD8B8',
-          heroBackground: '#FFFDD0'
+          heroBackground: '#fefbea'
         }
       }
     },

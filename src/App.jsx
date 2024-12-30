@@ -14,7 +14,7 @@ export default function App() {
         <div className="hidden sm:flex w-1/4 h-screen bg-color-sidebarBackground justify-center">
           <Sidebar/>
         </div>
-        <div className="w-full h-full sm:w-3/4">
+        <div className="w-full h-full sm:w-3/4 ">
           <Suspense fallback={'Loading...'}>
             <Routes>
               <Route path="/" element={<About />} />
