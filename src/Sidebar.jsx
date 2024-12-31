@@ -7,25 +7,25 @@ import { useNavigate } from 'react-router-dom'
 const Sidebar = () => {
     const navigate = useNavigate();
     return (
-        <div className='grid place-content-center h-screen fixed'>
+        <div className='grid place-content-center h-full fixed'>
             <div className="grid place-content-center">
                 <div className=" py-8 px-8 m-2 flex flex-col gap-5 rounded-xl">
-                    <div className="bg-gray-400 rounded-xl text-white font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-500">
+                    <div className="bg-gray-200 rounded-xl text-gray-800 font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-300">
                         <button className="py-2 px-2 uppercase" onClick={() => {
                             navigate('/')
                         }}>about</button>
                     </div>
-                    <div className="bg-gray-400 rounded-xl text-white font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-500">
+                    <div className="bg-gray-200 rounded-xl text-gray-800 font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-300">
                         <button className="py-2 px-2 uppercase" onClick={() => {
                             navigate('/projects')
                         }}>projects</button>
                     </div>
-                    <div className="bg-gray-400 rounded-xl text-white font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-500">
+                    <div className="bg-gray-200 rounded-xl text-gray-800 font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-300">
                         <button className="py-2 px-2 uppercase" onClick={() => {
                             navigate('/skills')
                         }}>skills</button>
                     </div>
-                    <div className="bg-gray-400 rounded-xl text-white font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-500">
+                    <div className="bg-gray-200 rounded-xl text-gray-800 font-semibold font-sans text-center sm:text-xs md:text-sm lg:text-lg xl:text-xl hover:bg-gray-300">
                         <button className="py-2 px-2 uppercase" onClick={() => {
                             navigate('/contact')
                         }}>contact me</button>
