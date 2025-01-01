@@ -18,7 +18,7 @@ export default function App() {
         
         <div className="w-full h-screen sm:w-3/4 bg-dots-pattern" style={{ backgroundSize: '20px 20px' }} >
         <div className="flex w-full justify-end">
-          <div className="flex fixed px-6 py-4 sm:hidden">
+          <div className="flex fixed px-6 py-4 z-50 sm:hidden">
             <Topbar/>
           </div>
         </div>

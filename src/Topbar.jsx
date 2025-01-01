@@ -12,7 +12,7 @@ const Topbar = () => {
 
   return (
     <div>
-        <div>
+        <div className='flex justify-end'>
             {/* <img src={menuLogo} alt="Menu" className='size-6'/> */}
             <button onClick={toggleMenu}>
                 {showMenu ? <img src={closeLogo} alt='Close' className='size-5'/> : <img src={menuLogo} alt='Menu' className='size-5'/>}

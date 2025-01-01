@@ -1,6 +1,6 @@
 import githubLogo from '../src/assets/github.png'
 import linkdinLogo from '../src/assets/linkedin.png'
-import xLogo from '../src/assets/twitter (2).png'
+import xLogo from '../src/assets/twitter.png'
 import threadsLogo from '../src/assets/threads.png'
 import { useNavigate } from 'react-router-dom'
 
