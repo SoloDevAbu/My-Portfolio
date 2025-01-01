@@ -9,8 +9,8 @@ const About = () => {
         //    <h2 className='py-1 text-base sm:text-xl font-sans font-semibold bg-yellow-500 rounded-sm p-1'>A Tech Enthusiast B.Tech 3rd year student</h2>
         //    <p className='pt-3 text-xs sm:text-base font-sans font-semibold text-gray-400'> a passionate web developer with expertise in modern JavaScript frameworks and libraries. I specialize in building dynamic and responsive web applications using React, Node.js, and other cutting-edge technologies. With a strong foundation in backend development and a keen eye for user-friendly interfaces, I strive to create seamless digital experiences. I'm constantly learning and pushing my limits to deliver innovative solutions.</p>
         // </div>
-        <div className='px-10 py-16'>
-            <div className='flex pb-10'>
+        <div className='px-10 py-16 md:px-24'>
+            <div className='flex pb-10 justify-center'>
                 <div className='pr-5 size-44'>
                     <img src={profile} alt="Abu" className='rounded-full border-4' />
                 </div>
