@@ -43,10 +43,16 @@ const NewSkills = () => {
                         <h1>MongoDB</h1>
                     </div>
                     <div className='bg-gray-200 px-2.5 lg:px-3.5 py-0.5 rounded-lg'>
+                        <h1>PostgreSQL</h1>
+                    </div>
+                    <div className='bg-gray-200 px-2.5 lg:px-3.5 py-0.5 rounded-lg'>
                         <h1>TailwindCSS</h1>
                     </div>
                     <div className='bg-gray-200 px-2.5 lg:px-3.5 py-0.5 rounded-lg'>
                         <h1>GitHub Actions</h1>
+                    </div>
+                    <div className='bg-gray-200 px-2.5 lg:px-3.5 py-0.5 rounded-lg'>
+                        <h1>AWS</h1>
                     </div>
                 </div>
             </div>

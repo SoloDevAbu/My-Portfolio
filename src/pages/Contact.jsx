@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div className='flex flex-row items-center justify-center min-h-screen'>
-      <div className='bg-color-sidebarBackground p-8 rounded-lg'>
+      <div className='bg-gray-300 p-8 rounded-lg'>
         <div className='flex flex-col justify-center'>
           <form onSubmit={sendEmail} className='flex flex-col gap-3'>
             <div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 type='text'
                 name='user_name'
                 placeholder='Enter your name'
-                className='p-2 border rounded w-80 lg:w-96 bg-neutral-300'
+                className='p-2 border rounded w-80 lg:w-96 bg-gray-200'
                 value={formData.user_name}
                 onChange={handleInputChange}
               />
@@ -71,7 +71,7 @@ const Contact = () => {
                 type='email'
                 name='user_email'
                 placeholder='Enter your email'
-                className='p-2 border rounded w-80 lg:w-96 bg-neutral-300'
+                className='p-2 border rounded w-80 lg:w-96 bg-gray-200'
                 value={formData.user_email}
                 onChange={handleInputChange}
               />
@@ -81,7 +81,7 @@ const Contact = () => {
               <textarea
                 name='message'
                 placeholder='Enter your message'
-                className='p-2 border rounded w-80 lg:w-96 bg-neutral-300'
+                className='p-2 border rounded w-80 lg:w-96 bg-gray-200'
                 rows='4'
                 value={formData.message}
                 onChange={handleInputChange}
