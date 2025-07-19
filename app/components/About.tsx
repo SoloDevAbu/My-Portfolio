@@ -1,12 +1,9 @@
-'use client'
-
-import { motion, useInView, easeOut } from 'framer-motion'
-import { useRef } from 'react'
+import { motion, easeOut } from 'framer-motion'
+import { useInViewAnimation } from './useInViewAnimation'
 import { Lightbulb, Target, Heart } from 'lucide-react'
 
 const About = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const [ref, isInView] = useInViewAnimation()
 
   const containerVariants = {
     hidden: { opacity: 0 },

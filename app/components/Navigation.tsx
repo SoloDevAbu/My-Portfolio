@@ -52,7 +52,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
             className="text-xl font-bold text-gradient cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            Abu Bakkar
+            Abu Bakkar Siddique
           </motion.div>
 
           {/* Desktop Navigation */}
