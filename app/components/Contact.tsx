@@ -64,25 +64,29 @@ const Contact = () => {
   }
 
   const sendEmail = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!validateForm()) return
+    e.preventDefault();
+    if (!validateForm()) return;
 
-    setIsSubmitting(true)
-    
+    setIsSubmitting(true);
+
     try {
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        formData,
+        {
+          user_name: formData.user_name,
+          user_email: formData.user_email,
+          message: formData.message,
+        },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-      )
-      
-      alert('Message sent successfully!')
-      setFormData({ user_name: '', user_email: '', message: '' })
+      );
+
+      alert('Message sent successfully!');
+      setFormData({ user_name: '', user_email: '', message: '' });
     } catch (error) {
-      alert('An error occurred. Please try again.')
+      alert('An error occurred. Please try again.');
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -90,8 +94,8 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "abubakkarsiddique2502@gmail.com",
-      link: "mailto:abubakkarsiddique2502@gmail.com"
+      value: "abubakkar2502@gmail.com",
+      link: "mailto:abubakkar2502@gmail.com"
     },
     {
       icon: <MapPin size={24} />,
@@ -102,7 +106,7 @@ const Contact = () => {
     {
       icon: <Phone size={24} />,
       title: "Available",
-      value: "Mon - Fri, 9AM - 6PM",
+      value: "8822089260",
       link: null
     }
   ]
